@@ -1,0 +1,405 @@
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        {
+            "type": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "text": "Ender Beacon",
+                "color": "dark_green",
+                "italic": false
+            }
+        },
+        {
+            "type": "minecraft:set_custom_data",
+            "tag": "{isEnderBeacon:1b}"
+        },
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                {
+                    "text": "Place in an Ender Chest",
+                    "color": "yellow",
+                    "italic": false
+                }
+            ],
+            "mode": "replace_all"
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: Speed I",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: -",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                    {
+                        "type": "minecraft:inverted",
+                        "term": {
+                            "type": "minecraft:location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "nbt": "{secondary_effect:\"minecraft:speed\"}"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:beacon",
+                                "nbt": "{primary_effect: \"minecraft:speed\"}"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: -",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: Speed II",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": "minecraft:beacon",
+                        "nbt": "{secondary_effect: \"minecraft:speed\"}"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: Haste I",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: -",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                    {
+                        "type": "minecraft:inverted",
+                        "term": {
+                            "type": "minecraft:location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "nbt": "{secondary_effect:\"minecraft:haste\"}"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:beacon",
+                                "nbt": "{primary_effect: \"minecraft:haste\"}"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: -",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: Haste II",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": "minecraft:beacon",
+                        "nbt": "{secondary_effect: \"minecraft:haste\"}"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: Resistance I",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: -",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                    {
+                        "type": "minecraft:inverted",
+                        "term": {
+                            "type": "minecraft:location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "nbt": "{secondary_effect:\"minecraft:resistance\"}"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:beacon",
+                                "nbt": "{primary_effect: \"minecraft:resistance\"}"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: -",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: Resistance II",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": "minecraft:beacon",
+                        "nbt": "{secondary_effect: \"minecraft:resistance\"}"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: Jump Boost I",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: -",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                    {
+                        "type": "minecraft:inverted",
+                        "term": {
+                            "type": "minecraft:location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "nbt": "{secondary_effect:\"minecraft:jump_boost\"}"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:beacon",
+                                "nbt": "{primary_effect: \"minecraft:jump_boost\"}"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: -",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: Jump Boost II",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": "minecraft:beacon",
+                        "nbt": "{secondary_effect: \"minecraft:jump_boost\"}"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: Strength I",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: -",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                    {
+                        "type": "minecraft:inverted",
+                        "term": {
+                            "type": "minecraft:location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "nbt": "{secondary_effect:\"minecraft:strength\"}"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:beacon",
+                                "nbt": "{primary_effect: \"minecraft:strength\"}"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Primary: -",
+                    "color": "white",
+                    "italic": true
+                },
+                {
+                    "text": "Secondary: Strength II",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "append",
+            "condition": {
+                "type": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": "minecraft:beacon",
+                        "nbt": "{secondary_effect: \"minecraft:strength\"}"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:set_lore",
+            "lore": [
+                {
+                    "text": "Secondary: Regeneration",
+                    "color": "white",
+                    "italic": true
+                }
+            ],
+            "mode": "replace_section",
+            "offset": 2,
+            "size": 1,
+            "condition": {
+                "type": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": "minecraft:beacon",
+                        "nbt": "{secondary_effect: \"minecraft:regeneration\"}"
+                    }
+                }
+            }
+        }
+    ]
+}

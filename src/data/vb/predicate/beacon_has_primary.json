@@ -1,0 +1,65 @@
+{
+	"type": "minecraft:any_of",
+	"terms": [
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{primary_effect: \"minecraft:speed\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{primary_effect: \"minecraft:haste\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{primary_effect: \"minecraft:resistance\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{primary_effect: \"minecraft:jump_boost\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{primary_effect: \"minecraft:strength\"}"
+				}
+			}
+		}
+	]
+}

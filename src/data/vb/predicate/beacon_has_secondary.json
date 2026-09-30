@@ -1,0 +1,77 @@
+{
+	"type": "minecraft:any_of",
+	"terms": [
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{secondary_effect: \"minecraft:speed\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{secondary_effect: \"minecraft:haste\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{secondary_effect: \"minecraft:resistance\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{secondary_effect: \"minecraft:jump_boost\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{secondary_effect: \"minecraft:strength\"}"
+				}
+			}
+		},
+		{
+			"type": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:beacon"
+					],
+					"nbt": "{secondary_effect: \"minecraft:regeneration\"}"
+				}
+			}
+		}
+	]
+}

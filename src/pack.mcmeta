@@ -1,0 +1,7 @@
+﻿{
+    "pack": {
+        "min_format": [82, 0],
+        "max_format": [999, 0],
+        "description": "§6Ender Beacons§r\n§f§oA Beacon squared, powered by the Void."
+    }
+}
